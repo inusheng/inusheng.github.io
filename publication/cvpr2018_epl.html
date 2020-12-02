@@ -27,39 +27,30 @@
         <div class="container-fluid">
             <div class="post">
                 <header>
-                    <h1>Text Perceptron: Towards End-to-End Arbitrary-Shaped Text Spotting</h1>
+                    <h1>Edit Probability for Scene Text Recognition</h1>
                     <hr />
                 </header>
 		    
 		    
-		<img src="../img/publications/aaai2020_tp.png" />
+		<img src="../img/publications/cvpr2018_epl.png" />
 
 
 
                 <h2>Abstract</h2>
-                Many approaches have recently been proposed to detect irregular scene text and achieved promising results. 
-				However, their localization results may not well satisfy the following text recognition part mainly because of two reasons: 
-				1) recognizing arbitrary shaped text is still a challenging task, and 
-				2) prevalent non-trainable pipeline strategies between text detection and text recognition will lead to suboptimal performances. 
-				To handle this incompatibility problem, in this paper we propose an end-to-end trainable text spotting approach named Text Perceptron. 
-				Concretely, Text Perceptron first employs an efficient segmentation-based text detector 
-				that learns the latent text reading order and boundary information. 
-				Then a novel Shape Transform Module (abbr. STM) is designed to transform the detected feature regions into regular morphologies 
-				without extra parameters. It unites text detection and the following recognition part into a whole framework, 
-				and helps the whole network achieve global optimization. Experiments show that our method achieves competitive performance 
-				on two standard text benchmarks, i.e., ICDAR 2013 and ICDAR 2015, 
-				and also obviously outperforms existing methods on irregular text benchmarks SCUT-CTW1500 and Total-Text.
+We consider the scene text recognition problem under the attention-based encoder-decoder framework, which is the state of the art. The existing methods usually employ a frame-wise maximal likelihood loss to optimize the models. When we train the model, the misalignment between the ground truth strings and the attention’s output sequences of probability distribution, which is caused by missing or superfluous characters, will confuse and mislead the training process, and consequently make the training costly and degrade the recognition accuracy. To handle this problem, we propose a novel method called edit probability (EP) for scene text recognition. EP tries to effectively estimate the probability of generating a string from the output sequence of probability distribution conditioned on the input image, while considering the possible occurrences of missing/superfluous characters. The advantage lies in that the
+training process can focus on the missing, superfluous and unrecognized characters, and thus the impact of the misalignment problem can be alleviated or even overcome. We conduct extensive experiments on standard benchmarks, including the IIIT-5K, Street View Text and ICDAR datasets. Experimental results show that the EP can substantially boost scene text recognition performance.  
+		    <a href="https://openaccess.thecvf.com/content_cvpr_2018/papers/Bai_Edit_Probability_for_CVPR_2018_paper.pdf" target="_blank" 
+                               style="color: #990000">[Paper]</a>
+
                 <hr />
 
                 <h2>Highlights Contributions</h2>
-                	<p> ❃ We design an efficient <strong><i>order-aware</strong></i> text detector to extract <strong><i>arbitrary-shaped</strong></i> text. </p>
-			<p> ❃ We develop the differentiable <strong><i>S</strong></i><i>hape<i> <strong><i>T</strong></i><i>ransform<i> <strong><i>M</strong></i><i>odule</i> (<strong><i>STM</strong></i>) devoting to optimizing both detection and recognition in an end-to-end trainable manner.</p>
-			<p> ❃ Our extensive experiments show that our method achieves <strong><i>competitive results on two regular text benchmarks</strong></i>, and also <strong><i>significantly surpasses previous methods on two irregular text benchmarks</strong></i></p>
-		
-                <strong>
-                    <font color="red">fsdfsdfdsf</font>
-                </strong>.
-                <br />
+                	<p> ❃ we propose a novel method called edit probability (EP) under the attention-based encoder-decoder framework for scene text recognition, to reduce the impact of 
+the misalignments caused by missing or superfluous characters. </p>
+		    <p> ❃ We conduct extensive experiments on standard benchmarks, including the IIIT-5K, Street View Text and ICDAR datasets. Experimental results show that the EP can substantially
+boost scene text recognition performance. </p>
+
+				<hr />
 
 
 
@@ -68,17 +59,17 @@
 				<br>
 				<!-- BibTex here (Make sure that this is the last code block) -->
 				<code>
-				@inproceedings{qiao2020tp,
+				@inproceedings{bai2018edit,
 					<br>
-						&nbsp; &nbsp; 		title={Text Perceptron: Towards End-to-End Arbitrary-Shaped Text Spotting},
+						&nbsp; &nbsp; 		title={Edit Probability for Scene Text Recognition},
 					<br>
-						&nbsp; &nbsp; 		author={Qiao, Liang and Tang, Sanli and Cheng, Zhanzhan and Xu, Yunlu and Niu, Yi and Pu, Shiliang and Wu, Fei},
+						&nbsp; &nbsp; 		author={Bai, Fan and Cheng, Zhanzhan and Niu, Yi and Pu, Shiliang and Zhou, Shuigeng},
 					<br>																							
-						&nbsp; &nbsp; 		booktitle={Proceedings of the Thirty-Fourth AAAI Conference on Artificial Intelligence},
+						&nbsp; &nbsp; 		booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
 					<br>
-						&nbsp; &nbsp; 		pages={11899-11907},
+						&nbsp; &nbsp; 		pages={1508--1516},
 					<br>
-						&nbsp; &nbsp; 		year={2020},
+						&nbsp; &nbsp; 		year={2018},
 					<br>
 						&nbsp; &nbsp; 		}
 					
