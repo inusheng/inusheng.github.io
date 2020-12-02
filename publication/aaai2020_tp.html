@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="index, follow">
-
     <title>Shanghaitech Vision and Intelligent Perception(SVIP) LAB</title>
-    <meta name="description" content="">
+        <meta name="description" content="">
     <link rel="alternate" type="application/rss+xml" href="/feed.xml">
 
     <!-- Stylesheet -->
@@ -22,53 +20,72 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="/img/small_logo.png">
 </head>
-
 <body data-spy="scroll" data-offset="80" data-target=".scrollspy" id="top">
     <div class="navigation"></div>
 
-    <article class="markdown-body">
-        <div id="content"></div>
-    </article>
+    <div class="test top-container" style="font-size: 16px">
+        <div class="container-fluid">
+            <div class="post">
+                <header>
+                    <h1>Text Perceptron: Towards End-to-End Arbitrary-Shaped Text Spotting</h1>
+                    <hr />
+                </header>
+
+                <div class="row" id="timeline-logos">
+                    <div class="col-xs-3 col-md-offset-3">
+                        <img src="../img/publications/aaai2020_tp.png" />
+                    </div>
+                    <div class="col-xs-6">
+                        <p>
+                            <h3>Fig 1</h3>
+
+                        </p>
+
+
+                    </div>
+                </div>
+
+                <h2>Abstract</h2>
+                Many approaches have recently been proposed to detect irregular scene text and achieved promising results. 
+				However, their localization results may not well satisfy the following text recognition part mainly because of two reasons: 
+				1) recognizing arbitrary shaped text is still a challenging task, and 
+				2) prevalent non-trainable pipeline strategies between text detection and text recognition will lead to suboptimal performances. 
+				To handle this incompatibility problem, in this paper we propose an end-to-end trainable text spotting approach named Text Perceptron. 
+				Concretely, Text Perceptron first employs an efficient segmentation-based text detector 
+				that learns the latent text reading order and boundary information. 
+				Then a novel Shape Transform Module (abbr. STM) is designed to transform the detected feature regions into regular morphologies 
+				without extra parameters. It unites text detection and the following recognition part into a whole framework, 
+				and helps the whole network achieve global optimization. Experiments show that our method achieves competitive performance 
+				on two standard text benchmarks, i.e., ICDAR 2013 and ICDAR 2015, 
+				and also obviously outperforms existing methods on irregular text benchmarks SCUT-CTW1500 and Total-Text.
+                <hr />
+
+                <h2>test</h2>
+                [2020/08/09] dsfsdfsdfs
+                <strong>
+                    <font color="red">fsdfsdfdsf</font>
+                </strong>.
+                <br />
+
+
+
+                <h2>Citations</h2>
+				please feel free to cite us:
+
+                
+            </div>
+        </div>
+    </div>
 
     <div class="footer"></div>
     <script src="/js/jquery.min.js"></script>
     <script src="/js/all.min.js"></script>
-    
 
-    <script src="/js/marked.min.js"></script>
-    <link rel="stylesheet" href="/css/github-markdown.min.css">
-    <style>
-        .markdown-body {
-            box-sizing: border-box;
-            min-width: 200px;
-            max-width: 980px;
-            margin: 0 auto;
-            padding: 45px;
-        }
-
-        @media (max-width: 767px) {
-            .markdown-body {
-                padding: 15px;
-            }
-        }
-    </style>
-
-    <script>        
+    <script>
         $(document).ready(function () {
             $(".footer").load("/common/footer.html");
             $(".navigation").load("/common/navigation.html");
-
-        });
-
-        $.ajax({
-            type: "GET", //请求方式
-            url: "/markdown/aaai2020_tp.md", //地址，就是json文件的请求路径
-            dataType: "text", //数据类型可以为 text xml json  script  jsonp
-            success: function (result) { //返回的参数就是 action里面所有的有get和set方法的参数
-                document.getElementById('content').innerHTML = marked(result);
-            }
         });
     </script>
 </body>
-
 </html>
