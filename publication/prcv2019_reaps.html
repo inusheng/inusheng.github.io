@@ -27,60 +27,51 @@
         <div class="container-fluid">
             <div class="post">
                 <header>
-                    <h1>Text Perceptron: Towards End-to-End Arbitrary-Shaped Text Spotting</h1>
+                    <h1>REAPS: Towards Better Recognition of Fine-grained Images by Region Attending and Part Sequencing</h1>
                     <hr />
                 </header>
 		    
 		    
-		<img src="../img/publications/aaai2020_tp.png" />
+		<img src="../img/publications/prcv2019_reaps.png" />
 
 
 
                 <h2>Abstract</h2>
-                Many approaches have recently been proposed to detect irregular scene text and achieved promising results. 
-				However, their localization results may not well satisfy the following text recognition part mainly because of two reasons: 
-				1) recognizing arbitrary shaped text is still a challenging task, and 
-				2) prevalent non-trainable pipeline strategies between text detection and text recognition will lead to suboptimal performances. 
-				To handle this incompatibility problem, in this paper we propose an end-to-end trainable text spotting approach named Text Perceptron. 
-				Concretely, Text Perceptron first employs an efficient segmentation-based text detector 
-				that learns the latent text reading order and boundary information. 
-				Then a novel Shape Transform Module (abbr. STM) is designed to transform the detected feature regions into regular morphologies 
-				without extra parameters. It unites text detection and the following recognition part into a whole framework, 
-				and helps the whole network achieve global optimization. Experiments show that our method achieves competitive performance 
-				on two standard text benchmarks, i.e., ICDAR 2013 and ICDAR 2015, 
-				and also obviously outperforms existing methods on irregular text benchmarks SCUT-CTW1500 and Total-Text.
+                Fine-grained image recognition has been a hot research topic in computer vision due to its various applications. The-state-of-the-art is the part/region-based approaches that first localize discriminative parts/regions, and then learn their fine-grained features. However, these approaches have some inherent drawbacks: 1) the discriminative feature representation of an object is prone to be disturbed by complicated background; 2) it is unreasonable and inflexible to fix the number of salient parts, because the intended parts may be unavailable under certain circumstances due to occlusion or incompleteness, and 3) the spatial correlation among different salient parts has not been thoroughly exploited (if not completely neglected). To overcome these drawbacks, in this paper we propose a new, simple yet robust method by building part sequence model on the attended object region. Concretely, we first try to alleviate the background effect by using a region attention mechanism to generate the attended region from the original image. Then, instead of localizing different salient parts and extracting their features separately, we learn the part representation implicitly by applying a mapping function on the serialized features of the object. Finally, we combine the region attending network and the part sequence learning network into a unified framework that can be trained end-to-end with only image-level labels. Our extensive experiments on three fine-grained benchmarks show that the proposed method achieves the state of the art performance.
+		    <a href="https://arxiv.org/pdf/1908.01962.pdf" target="_blank" 
+                               style="color: #990000">[Paper]</a>
+
                 <hr />
 
                 <h2>Highlights Contributions</h2>
-                	<p> ❃ We design an efficient <i>order-aware</i> text detector to extract <i>arbitrary-shaped</i> text. </p>
-			<p> ❃ We develop the differentiable <strong><i>S</strong></i><i>hape<i> <strong><i>T</strong></i><i>ransform<i> <strong><i>M</strong></i><i>odule</i> (<strong><i>STM</strong></i>) devoting to optimizing both detection and recognition in an end-to-end trainable manner.</p>
-			<p> ❃ Our extensive experiments show that our method achieves ***competitive results on two regular text benchmarks***, and also ***significantly surpasses previous methods on two irregular text benchmarks***</p>
-		
-                <strong>
-                    <font color="red">fsdfsdfdsf</font>
-                </strong>.
-                <br />
+                	<p> ❃ We propose the novel 'soft-part' concept, and implement this concept by designing a part sequence learning network (PSN), which learns implicit discriminative part representation and captures the spatial context simultaneously. </p>
+			<p> ❃ We apply the region attending network to localizing the object region and alleviating the interference of complicated background to fine feature representation.</p>
+			<p> ❃ We integrate the region attending network and the part sequence learning network into a unified framework, and train it end-to-end without any part-level annotation.</p>
+		    	<p> ❃ We conduct extensive experiments on three challenging datasets (Stanford Cars, FGVC-Aircraft and CUB Birds), which demonstrate the superiority of our method over the existing
+ones.</p>
+
+				<hr />
 
 
 
-                <h2>Citations</h2>
-				please feel free to cite us:
-				<br> <br>
+                <h2>Recommended Citations</h2>
+				If you find our work is helpful to your research, please feel free to cite us:
+				<br>
 				<!-- BibTex here (Make sure that this is the last code block) -->
 				<code>
-				@inproceedings{zhang2019adversarial,
+				@inproceedings{zhang2019reaps,
 					<br>
-						&nbsp; &nbsp; 		title={Adversarial Seeded Sequence Growing for Weakly-Supervised Temporal Action Localization},
+						&nbsp; &nbsp; 		title={REAPS: Towards Better Recognition of Fine-grained Images by Region Attending and Part Sequencing},
 					<br>
-						&nbsp; &nbsp; 		author={Zhang, Chengwei and Xu, Yunlu and Cheng, Zhanzhan and Niu, Yi and Pu, Shiliang and Wu, Fei and Zou, Futai},
+						&nbsp; &nbsp; 		author={Zhang, Peng and Zhu, Xinyu and Cheng, Zhanzhan and Zhou, Shuigeng and Niu, Yi},
 					<br>																							
-						&nbsp; &nbsp; 		booktitle={Proceedings of the 27th ACM International Conference on Multimedia},
+						&nbsp; &nbsp; 		booktitle={Chinese Conference on Pattern Recognition and Computer Vision (PRCV)},
 					<br>
-						&nbsp; &nbsp; 		pages={738--746},
+						&nbsp; &nbsp; 		pages={193--204},
 					<br>
 						&nbsp; &nbsp; 		year={2019},
-					<br>
-						&nbsp; &nbsp; 		organization={ACM}
+					<br>    
+						&nbsp; &nbsp;           organization={Springer}
 					<br>
 						&nbsp; &nbsp; 		}
 					
