@@ -1,265 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="index, follow">
-
-    <title>Dxxxx Axxxx Vxxxx Axxxx Rxxxx (DAVAR) LAB</title>
-    <meta name="description" content="">
+    <title>Shanghaitech Vision and Intelligent Perception(SVIP) LAB</title>
+        <meta name="description" content="">
     <link rel="alternate" type="application/rss+xml" href="/feed.xml">
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="/css/main.css" rel='stylesheet' type='text/css'>
 
+
     <!-- Google Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Nunito:400,700' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic' rel='stylesheet'
-        type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic' rel='stylesheet' type='text/css'>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="/img/small_logo.png">
 </head>
-
 <body data-spy="scroll" data-offset="80" data-target=".scrollspy" id="top">
     <div class="navigation"></div>
-    <div class="news top-container">
+
+    <div class="news top-container" style="font-size: 16px">
         <div class="container-fluid">
             <div class="post">
-                
-<!--                 <h2>Preprints</h2> -->
-<!--                 <hr /> -->
-                
-                <h2>Conference Papers</h2>
+                <header>
+                    <h1>Text Perceptron: Towards End-to-End Arbitrary-Shaped Text Spotting</h1>
+                    <hr />
+                </header>
+		    
+		    
+		<img src="../img/publications/aaai2020_tp.png" />
+
+
+
+                <h2>Abstract</h2>
+                Many approaches have recently been proposed to detect irregular scene text and achieved promising results. 
+				However, their localization results may not well satisfy the following text recognition part mainly because of two reasons: 
+				1) recognizing arbitrary shaped text is still a challenging task, and 
+				2) prevalent non-trainable pipeline strategies between text detection and text recognition will lead to suboptimal performances. 
+				To handle this incompatibility problem, in this paper we propose an end-to-end trainable text spotting approach named Text Perceptron. 
+				Concretely, Text Perceptron first employs an efficient segmentation-based text detector 
+				that learns the latent text reading order and boundary information. 
+				Then a novel Shape Transform Module (abbr. STM) is designed to transform the detected feature regions into regular morphologies 
+				without extra parameters. It unites text detection and the following recognition part into a whole framework, 
+				and helps the whole network achieve global optimization. Experiments show that our method achieves competitive performance 
+				on two standard text benchmarks, i.e., ICDAR 2013 and ICDAR 2015, 
+				and also obviously outperforms existing methods on irregular text benchmarks SCUT-CTW1500 and Total-Text.
                 <hr />
-                
-                <!-- AAAI 2020_tp -->
-                <div class="media">
-                    <div class="media-body">
-                        <div class="col-xs-3">
-                            <img src="img/publications/aaai2020_tp.png">
-                        </div>
 
-                        <h4 class="media-heading">
-			    <a href="/publication/aaai2020_tp.html">Text Perceptron: Towards End-to-End Arbitrary-Shaped Text Spotting</a>                       
-                            <br>
-                            <small>Liang Qiao, Sanli Tang, Zhanzhan Cheng<sup>*</sup>, Yunlu Xu, Yi Niu, Shiliang Pu, Fei Wu </small>
-                        </h4>
-
-                        <small>Accepted by
-                            <strong>
-                                <font color="red">AAAI 2020</font>
-                            </strong>
-                            <br>
-                            <a href="https://arxiv.org/pdf/2002.06820" target="_blank" 
-                               style="color: #990000">[Paper]</a>
-                            <a href="https://github.com/DAVAR-Lab" target="_blank"
-                                style="color: #990000">[Code]</a>                           
-                        </small>
-                    </div>
-                </div>
-                <hr />  
-		    
-		    
-		<!--  PRCV 2019_REAPS -->
-                <div class="media">
-                    <div class="media-body">
-                        <div class="col-xs-3">
-                            <img src="img/publications/prcv2019_reaps.png">
-                        </div>
-
-                        <h4 class="media-heading">
-			    <a href="/publication/prcv2019_reaps.html">REAPS: Towards Better Recognition of Fine-grained Images by Region Attending and Part Sequencing</a>                       
-                            <br>
-                            <small>Peng Zhang, Xinyu Zhu, Zhanzhan Cheng, Shuigeng Zhou, Yi Niu </small>
-                        </h4>
-
-                        <small>Accepted by
-                            <strong>
-                                <font color="red">PRCV 2019</font>
-                            </strong>
-                            <br>
-                            <a href="https://arxiv.org/pdf/1908.01962.pdf" target="_blank" 
-                               style="color: #990000">[Paper]</a>                         
-                        </small>
-                    </div>
-                </div>
-                <hr />  
-		    
+                <h2>Highlights Contributions</h2>
+                	<p> ❃ We design an efficient <strong><i>order-aware</strong></i> text detector to extract <strong><i>arbitrary-shaped</strong></i> text. </p>
+			<p> ❃ We develop the differentiable <strong><i>S</strong></i><i>hape<i> <strong><i>T</strong></i><i>ransform<i> <strong><i>M</strong></i><i>odule</i> (<strong><i>STM</strong></i>) devoting to optimizing both detection and recognition in an end-to-end trainable manner.</p>
+			<p> ❃ Our extensive experiments show that our method achieves <strong><i>competitive results on two regular text benchmarks</strong></i>, and also <strong><i>significantly surpasses previous methods on two irregular text benchmarks</strong></i></p>
 		
-		<!--  ACMMM 2019_YORO -->
-                <div class="media">
-                    <div class="media-body">
-                        <div class="col-xs-3">
-                            <img src="img/publications/acmmm2019_yoro.png">
-                        </div>
+                <strong>
+                    <font color="red">fsdfsdfdsf</font>
+                </strong>.
+                <br />
 
-                        <h4 class="media-heading">
-			    <a href="/publication/acmmm2019_yoro.html">You Only Recognize Once: Towards Fast Video Text Spotting</a>                       
-                            <br>
-                            <small>Zhanzhan Cheng, Jing Lu, Yi Niu, Shiliang Pu, Fei Wu, Shuigeng Zhou </small>
-                        </h4>
 
-                        <small>Accepted by
-                            <strong>
-                                <font color="red">ACMMM 2019</font>
-                            </strong>
-                            <br>
-                            <a href="https://arxiv.org/pdf/1903.03299.pdf" target="_blank" 
-                               style="color: #990000">[Paper]</a>                         
-                        </small>
-                    </div>
-                </div>
-                <hr />
+
+                <h2>Recommended Citations</h2>
+				If you find our work is helpful to your research, please feel free to cite us:
+				<br>
+				<!-- BibTex here (Make sure that this is the last code block) -->
+				<code>
+				@inproceedings{qiao2020tp,
+					<br>
+						&nbsp; &nbsp; 		title={Text Perceptron: Towards End-to-End Arbitrary-Shaped Text Spotting},
+					<br>
+						&nbsp; &nbsp; 		author={Qiao, Liang and Tang, Sanli and Cheng, Zhanzhan and Xu, Yunlu and Niu, Yi and Pu, Shiliang and Wu, Fei},
+					<br>																							
+						&nbsp; &nbsp; 		booktitle={Proceedings of the Thirty-Fourth AAAI Conference on Artificial Intelligence},
+					<br>
+						&nbsp; &nbsp; 		pages={11899-11907},
+					<br>
+						&nbsp; &nbsp; 		year={2020},
+					<br>
+						&nbsp; &nbsp; 		}
+					
+				
+				</code>
+		<br><br>
+				
+
                 
-
-		<!--  ACMMM 2019_SSG -->
-                <div class="media">
-                    <div class="media-body">
-                        <div class="col-xs-3">
-                            <img src="img/publications/acmmm2019_ssg.png">
-                        </div>
-
-                        <h4 class="media-heading">
-			    <a href="/publication/acmmm2019_ssg.html">Adversarial Seeded Sequence Growing for Weakly-Supervised Temporal Action Localization</a>                       
-                            <br>
-                            <small>Chengwei Zhang, Yunlu Xu, Zhanzhan Cheng, Yi Niu, Shiliang Pu, Fei Wu, Futai Zou </small>
-                        </h4>
-
-                        <small>Accepted by
-                            <strong>
-                                <font color="red">ACMMM 2019</font>
-                            </strong>
-                            <br>
-                            <a href="https://arxiv.org/pdf/1908.02422.pdf" target="_blank" 
-                               style="color: #990000">[Paper]</a>                         
-                        </small>
-                    </div>
-                </div>
-                <hr />
-		    
-		    
-		                <!-- AAAI 2019_star -->
-                <div class="media">
-                    <div class="media-body">
-                        <div class="col-xs-3">
-                            <img src="img/publications/aaai2019_star.png">
-                        </div>
-
-                        <h4 class="media-heading">
-			    <a href="/publication/aaai2019_star.html">Segregated Temporal Assembly Recurrent Networks for Weakly Supervised Multiple Action Detection</a>                       
-                            <br>
-                            <small>Yunlu Xu, Chengwei Zhang, Zhanzhan Cheng, Jianwen Xie, Yi Niu, Shiliang Pu, Fei Wu </small>
-                        </h4>
-
-                        <small>Accepted by
-                            <strong>
-                                <font color="red">AAAI 2019</font>
-                            </strong>
-                            <br>
-                            <a href="https://arxiv.org/pdf/1811.07460.pdf" target="_blank" 
-                               style="color: #990000">[Paper]</a>
-                        
-                        </small>
-                    </div>
-                </div>
-                <hr />  
-		    
-		 
-				                <!-- CVPR 2018_EPL -->
-                <div class="media">
-                    <div class="media-body">
-                        <div class="col-xs-3">
-                            <img src="img/publications/cvpr2018_epl.png">
-                        </div>
-
-                        <h4 class="media-heading">
-			    <a href="/publication/cvpr2018_epl.html">Edit Probability for Scene Text Recognition</a>                       
-                            <br>
-                            <small>Fan Bai, Zhanzhan Cheng, Yi Niu, Shiliang Pu, Shuigeng Zhou </small>
-                        </h4>
-
-                        <small>Accepted by
-                            <strong>
-                                <font color="red">CVPR 2018</font>
-                            </strong>
-                            <br>
-                            <a href="https://openaccess.thecvf.com/content_cvpr_2018/papers/Bai_Edit_Probability_for_CVPR_2018_paper.pdf" target="_blank" 
-                               style="color: #990000">[Paper]</a>
-                        
-                        </small>
-                    </div>
-                </div>
-                <hr />  
-		    
-		    
-						                <!-- CVPR 2018_AON -->
-                <div class="media">
-                    <div class="media-body">
-                        <div class="col-xs-3">
-                            <img src="img/publications/cvpr2018_aon.png">
-                        </div>
-
-                        <h4 class="media-heading">
-			    <a href="/publication/cvpr2018_aon.html">AON: Towards Arbitrarily-Oriented Text Recognition</a>                       
-                            <br>
-                            <small>Zhanzhan Cheng, Yangliu Xu, Fan Bai, Yi Niu, Shiliang Pu, Shuigeng Zhou </small>
-                        </h4>
-
-                        <small>Accepted by
-                            <strong>
-                                <font color="red">CVPR 2018</font>
-                            </strong>
-                            <br>
-                            <a href="http://openaccess.thecvf.com/content_cvpr_2018/papers/Cheng_AON_Towards_Arbitrarily-Oriented_CVPR_2018_paper.pdf" target="_blank" 
-                               style="color: #990000">[Paper]</a>
-                        
-                        </small>
-                    </div>
-                </div>
-                <hr />  
-		    
-		    
-								                <!-- ICCV 2017_FAN -->
-                <div class="media">
-                    <div class="media-body">
-                        <div class="col-xs-3">
-                            <img src="img/publications/iccv2017_fan.png">
-                        </div>
-
-                        <h4 class="media-heading">
-			    <a href="/publication/iccv2017_fan.html">Focusing Attention: Towards Accurate Text Recognition in Natural Images</a>                       
-                            <br>
-                            <small>Zhanzhan Cheng, Fan Bai, Yunlu Xu, Gang Zheng, Shiliang Pu, Shuigeng Zhou </small>
-                        </h4>
-
-                        <small>Accepted by
-                            <strong>
-                                <font color="red">ICCV 2017</font>
-                            </strong>
-                            <br>
-                            <a href="http://openaccess.thecvf.com/content_ICCV_2017/papers/Cheng_Focusing_Attention_Towards_ICCV_2017_paper.pdf" target="_blank" 
-                               style="color: #990000">[Paper]</a>
-                        
-                        </small>
-                    </div>
-                </div>
-                <hr />  
-		
-                
-
-
-
-<!--                <h2>Journal Papers</h2> -->
-<!--                <hr />                  -->
-<!--                uncomment this part when you want to add journal papers    -->
-
             </div>
         </div>
     </div>
-
 
     <div class="footer"></div>
     <script src="/js/jquery.min.js"></script>
@@ -272,5 +103,4 @@
         });
     </script>
 </body>
-
 </html>
