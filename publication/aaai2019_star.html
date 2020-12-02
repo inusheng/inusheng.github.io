@@ -27,39 +27,38 @@
         <div class="container-fluid">
             <div class="post">
                 <header>
-                    <h1>Text Perceptron: Towards End-to-End Arbitrary-Shaped Text Spotting</h1>
+                    <h1>Segregated Temporal Assembly Recurrent Networks for Weakly Supervised Multiple Action Detection</h1>
                     <hr />
                 </header>
 		    
 		    
-		<img src="../img/publications/aaai2020_tp.png" />
+		<img src="../img/publications/aaai2019_star.png" />
 
 
 
                 <h2>Abstract</h2>
-                Many approaches have recently been proposed to detect irregular scene text and achieved promising results. 
-				However, their localization results may not well satisfy the following text recognition part mainly because of two reasons: 
-				1) recognizing arbitrary shaped text is still a challenging task, and 
-				2) prevalent non-trainable pipeline strategies between text detection and text recognition will lead to suboptimal performances. 
-				To handle this incompatibility problem, in this paper we propose an end-to-end trainable text spotting approach named Text Perceptron. 
-				Concretely, Text Perceptron first employs an efficient segmentation-based text detector 
-				that learns the latent text reading order and boundary information. 
-				Then a novel Shape Transform Module (abbr. STM) is designed to transform the detected feature regions into regular morphologies 
-				without extra parameters. It unites text detection and the following recognition part into a whole framework, 
-				and helps the whole network achieve global optimization. Experiments show that our method achieves competitive performance 
-				on two standard text benchmarks, i.e., ICDAR 2013 and ICDAR 2015, 
-				and also obviously outperforms existing methods on irregular text benchmarks SCUT-CTW1500 and Total-Text.
+		    Video text spotting is still an important research topic due to its various real-applications. 
+This paper proposes a segregated temporal assembly recurrent (STAR) network for weakly-supervised multiple action detection. 
+The model learns from untrimmed videos with only supervision of video-level labels and makes prediction of intervals of multiple actions. 
+Speciﬁcally, we ﬁrst assemble video clips according to class labels by an attention mechanism that learns class-variable attention weights and thus helps the noise relieving from background or other actions. 
+Secondly, we build temporal relationship between actions by feeding the assembled features into an enhanced recurrent neural network. 
+Finally, we transform the output of recurrent neural network into the corresponding action distribution. 
+In order to generate more precise temporal proposals, we design a score term called segregated temporal gradient-weighted class activation mapping (ST-GradCAM) fused with attention weights. 
+Experiments on THUMOS’14 and ActivityNet1.3 datasets show that our approach outperforms the state-of-the-art weakly-supervised method, and performs at par with the fully-supervised counterparts.
+		    <a href="https://arxiv.org/pdf/1811.07460.pdf" target="_blank" 
+                               style="color: #990000">[Paper]</a>
+
                 <hr />
 
                 <h2>Highlights Contributions</h2>
-                	<p> ❃ We design an efficient <strong><i>order-aware</strong></i> text detector to extract <strong><i>arbitrary-shaped</strong></i> text. </p>
-			<p> ❃ We develop the differentiable <strong><i>S</strong></i><i>hape<i> <strong><i>T</strong></i><i>ransform<i> <strong><i>M</strong></i><i>odule</i> (<strong><i>STM</strong></i>) devoting to optimizing both detection and recognition in an end-to-end trainable manner.</p>
-			<p> ❃ Our extensive experiments show that our method achieves <strong><i>competitive results on two regular text benchmarks</strong></i>, and also <strong><i>significantly surpasses previous methods on two irregular text benchmarks</strong></i></p>
-		
-                <strong>
-                    <font color="red">fsdfsdfdsf</font>
-                </strong>.
-                <br />
+		    <p> ❃ We reformulate the multiple action detection from a multi-instance multi-label (MIML) perspective, i.e., extracting instance-patterns and generating action labels, which eliminates interference among unrelated action features and captures temporal dependency between multiple concurrent actions.</p>
+		    <p> ❃ We propose an end-to-end framework called Segregated Temporal Assembly Recurrent (STAR), which includes a well-designed attention module and an enhanced RNN, is developed to be trained in a weakly supervised manner from videos with only video-level labels.</p>
+		    <p> ❃ We design an ST-GradCAM operation fused with class-variable assembly weights for action temporal localization.</p>
+		    <p> ❃ Our extensive experiments demonstrate that our weakly supervised framework achieves impressive performance on the challenging THUMOS'14 and ActivityNet1.3 datasets for action detection, comparable with those of supervised learning methods.</p>
+		    
+		    
+		  
+				<hr />
 
 
 
@@ -68,17 +67,14 @@
 				<br>
 				<!-- BibTex here (Make sure that this is the last code block) -->
 				<code>
-				@inproceedings{qiao2020tp,
+				@article{Xu2018Segregated,
 					<br>
-						&nbsp; &nbsp; 		title={Text Perceptron: Towards End-to-End Arbitrary-Shaped Text Spotting},
+						&nbsp; &nbsp; 		title={Adversarial Seeded Sequence Growing for Weakly-Supervised Temporal Action Localization},
 					<br>
-						&nbsp; &nbsp; 		author={Qiao, Liang and Tang, Sanli and Cheng, Zhanzhan and Xu, Yunlu and Niu, Yi and Pu, Shiliang and Wu, Fei},
-					<br>																							
-						&nbsp; &nbsp; 		booktitle={Proceedings of the Thirty-Fourth AAAI Conference on Artificial Intelligence},
+						&nbsp; &nbsp; 		author={Segregated Temporal Assembly Recurrent Networks for Weakly Supervised Multiple Action Detection},
 					<br>
-						&nbsp; &nbsp; 		pages={11899-11907},
-					<br>
-						&nbsp; &nbsp; 		year={2020},
+						&nbsp; &nbsp; 		year={2018},
+	
 					<br>
 						&nbsp; &nbsp; 		}
 					
