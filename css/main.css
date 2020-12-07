@@ -6,6 +6,8 @@
 
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 
+
+
 html {
     font-family: sans-serif;
     -ms-text-size-adjust: 100%;
@@ -8339,13 +8341,14 @@ strong {
 }
 
 .hero {
-    background: #004798;
+    background: #0909099c;
     position: relative;
-    margin-top: 70px
+    margin-top: 70px;
+	margin-bottom: 0px;
 }
 
 .hero .item {
-    height: 45em
+    height: 35em
 }
 
 .hero .item img {
@@ -8389,7 +8392,8 @@ strong {
 }
 
 .top-container {
-    margin-top: 70px
+    margin-top: 70px;
+	background: #eefaff70
 }
 
 .about-us {
@@ -8957,7 +8961,9 @@ strong {
 .owl-controls .owl-page,
 .owl-controls .owl-buttons div {
     cursor: pointer
+	
 }
+
 
 .owl-controls {
     -webkit-user-select: none;
@@ -8965,7 +8971,13 @@ strong {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    -webkit-tap-highlight-color: transparent
+    -webkit-tap-highlight-color: transparent;
+	position: absolute;
+    bottom: 26px;
+    left: 0;
+    text-align: center;
+    z-index: 300;
+    width: 100%
 }
 
 .grabbing {
