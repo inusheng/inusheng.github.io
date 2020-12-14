@@ -13,6 +13,9 @@
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="/css/main.css" rel='stylesheet' type='text/css'>
+	<style>
+	
+	</style>
 
     <!-- Google Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Nunito:400,700' rel='stylesheet' type='text/css'>
@@ -30,6 +33,9 @@
         <div class="container-fluid">
             <div id="content">
                 
+
+
+            
             </div>
         </div>
     </div>
@@ -68,7 +74,7 @@
 
         $.ajax({
             type: "GET", //请求方式
-            url: "/activity/AAAI2019/AAAI2019.md", //地址，就是json文件的请求路径
+            url: "/activity/Dishuihu/dishuihu.md", //地址，就是json文件的请求路径
             dataType: "text", //数据类型可以为 text xml json  script  jsonp
             success: function (result) { //返回的参数就是 action里面所有的有get和set方法的参数
                 document.getElementById('content').innerHTML = marked(result);
