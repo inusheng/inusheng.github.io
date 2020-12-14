@@ -3,14 +3,14 @@
 
 ## We are the Champion!!!
 
-![](/activity/Badminton/1214_6.jpg)
+![](/activity/Badminton/1214_6.png)
 
-![](/activity/Badminton/1214_1.jpg)
+![](/activity/Badminton/1214_1.png)
 
-![](/activity/Badminton/1214_2.jpg)
+![](/activity/Badminton/1214_2.png)
 
-![](/activity/Badminton/1214_3.jpg)
+![](/activity/Badminton/1214_3.png)
 
-![](/activity/Badminton/1214_4.jpg)
+![](/activity/Badminton/1214_4.png)
 
-![](/activity/Badminton/1214_5.jpg)
+![](/activity/Badminton/1214_5.png)
